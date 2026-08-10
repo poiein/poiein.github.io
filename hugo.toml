@@ -1,0 +1,32 @@
+baseURL = "http://localhost:1313/"
+title ="Rowan‘s Blog"
+theme = "LoveIt"
+locale = "en"
+enableGitInfo = false
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[params]
+  defaultTheme = "auto"
+  title = "Rowan‘s Blog"            # 这里也要设置！
+  description = "This is my blog"
+  [params.footer]
+    enable = true
+    since = 2026
+   [params.header]
+    [params.header.title]
+      name = "Rowan‘s Blog"
+
+
