@@ -1,6 +1,6 @@
 +++
 date = '2026-08-13T18:42:48+08:00'
-draft = false
+draft = true
 title = 'Stm32: HOW TO READ the STM32F103 reference manual'
 tags=['STM32']
 categories=[]

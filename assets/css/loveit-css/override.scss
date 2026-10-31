@@ -1,0 +1,266 @@
+// ============================================
+// _override.scss  —— 高级杂志风配色
+// 风格：暖白纸感 + 墨色文字 + 赭石强调
+// ============================================
+
+// ========== Global ========== //
+$global-font-family: "Georgia", "Songti SC", "Noto Serif SC", serif !default;
+$global-font-size: 17px !default;
+$global-line-height: 1.8rem !default;
+
+// 纸感背景
+$global-background-color: #faf8f3 !default;
+$global-background-color-dark: #1c1b19 !default;
+
+// 墨色文字
+$global-font-color: #2b2a26 !default;
+$global-font-color-dark: #d8d4cc !default;
+
+// 次级文字：暖灰
+$global-font-secondary-color: #8a8579 !default;
+$global-font-secondary-color-dark: #7d786e !default;
+
+// 链接：用近墨色，hover 才现赭石
+$global-link-color: #2b2a26 !default;
+$global-link-color-dark: #d8d4cc !default;
+$global-link-hover-color: #9c6b3f !default;
+$global-link-hover-color-dark: #d9a066 !default;
+
+// 边框：极浅暖灰
+$global-border-color: #e8e3d9 !default;
+$global-border-color-dark: #33312d !default;
+// ========== Global ========== //
+
+// ========== Scrollbar ========== //
+$scrollbar-color: #b5ae9f !default;
+$scrollbar-hover-color: #9c9484 !default;
+// ========== Scrollbar ========== //
+
+// ========== Selection ========== //
+// 选中文字用淡赭石
+$selection-color: rgba(156, 107, 63, 0.18) !default;
+$selection-color-dark: rgba(217, 160, 102, 0.25) !default;
+// ========== Selection ========== //
+
+// ========== Header ========== //
+$header-background-color: #f5f1e8 !default;
+$header-background-color-dark: #232220 !default;
+
+$header-hover-color: #9c6b3f !default;
+$header-hover-color-dark: #d9a066 !default;
+
+$search-background-color: #ece7dc !default;
+$search-background-color-dark: #33312d !default;
+// ========== Header ========== //
+
+// ========== Single Content ========== //
+// 正文链接：赭石
+$single-link-color: #9c6b3f !default;
+$single-link-color-dark: #d9a066 !default;
+$single-link-hover-color: #6f4a29 !default;
+$single-link-hover-color-dark: #f0c48a !default;
+
+// 表格：暖白 + 米色表头
+$table-background-color: #faf8f3 !default;
+$table-background-color-dark: #232220 !default;
+$table-thead-color: #efe9dd !default;
+$table-thead-color-dark: #2c2a27 !default;
+
+// 引用块：墨绿（纸媒经典配色）
+$blockquote-color: #4a6b5a !default;
+$blockquote-color-dark: #7fa88f !default;
+// ========== Single Content ========== //
+
+// ========== Pagination ========== //
+$pagination-link-color: #9c6b3f !default;
+$pagination-link-color-dark: #d9a066 !default;
+$pagination-link-hover-color: #2b2a26 !default;
+$pagination-link-hover-color-dark: #f0c48a !default;
+// ========== Pagination ========== //
+
+// ========== Code ========== //
+// 行内代码：赭石字 + 暖灰底
+$code-color: #9c6b3f !default;
+$code-color-dark: #d9a066 !default;
+$code-background-color: #f2ede3 !default;
+$code-background-color-dark: #2a2825 !default;
+
+$code-info-color: #8a8579 !default;
+$code-info-color-dark: #7d786e !default;
+// ========== Code ========== //
+
+// ============================================
+// 代码高亮：降饱和杂志配色
+// 关键词=赭石 / 字符串=橄榄绿 / 数字=土黄
+// 函数名=灰蓝 / 注释=暖灰
+// ============================================
+$code-highlight-color-map: (
+  /* Parentheses */ "p": #7a756a,
+  /* Keyword */ "k": #9c6b3f,
+  /* KeywordConstant */ "kc": #9c6b3f,
+  /* KeywordDeclaration */ "kd": #9c6b3f,
+  /* KeywordNamespace */ "kn": #9c6b3f,
+  /* KeywordPseudo */ "kp": #9c6b3f,
+  /* KeywordReserved */ "kr": #9c6b3f,
+  /* KeywordType */ "kt": #9c6b3f,
+  /* Name */ "n": #2b2a26,
+  /* NameAttribute */ "na": #6b7f8f,
+  /* NameBuiltin */ "nb": #a0724a,
+  /* NameBuiltinPseudo */ "bp": #a0724a,
+  /* NameClass */ "nc": #b08a4a,
+  /* NameConstant */ "no": #6b7f8f,
+  /* NameDecorator */ "nd": #5f7d68,
+  /* NameEntity */ "ni": #6b7f8f,
+  /* NameException */ "ne": #6b7f8f,
+  /* NameFunction */ "nf": #5f7d68,
+  /* NameFunctionMagic */ "fm": #6b7f8f,
+  /* NameLabel */ "nl": #6b7f8f,
+  /* NameNamespace */ "nn": #6b7f8f,
+  /* NameOther */ "nx": #2b2a26,
+  /* NameProperty */ "py": #5f7d68,
+  /* NameTag */ "nt": #9c6b3f,
+  /* NameVariable */ "nv": #5f7d68,
+  /* NameVariableClass */ "vc": #5f7d68,
+  /* NameVariableGlobal */ "vg": #5f7d68,
+  /* NameVariableInstance */ "vi": #5f7d68,
+  /* NameVariableMagic */ "vm": #5f7d68,
+  /* Literal */ "l": #7a6a4f,
+  /* LiteralDate */ "ld": #7a6a4f,
+  /* LiteralString */ "s": #6f8a5a,
+  /* LiteralStringAffix */ "sa": #6f8a5a,
+  /* LiteralStringBacktick */ "sb": #6f8a5a,
+  /* LiteralStringChar */ "sc": #6f8a5a,
+  /* LiteralStringDelimiter */ "dl": #6f8a5a,
+  /* LiteralStringDoc */ "sd": #6f8a5a,
+  /* LiteralStringDouble */ "s2": #6f8a5a,
+  /* LiteralStringEscape */ "se": #6f8a5a,
+  /* LiteralStringHeredoc */ "sh": #6f8a5a,
+  /* LiteralStringInterpol */ "si": #6f8a5a,
+  /* LiteralStringOther */ "sx": #6f8a5a,
+  /* LiteralStringRegex */ "sr": #6f8a5a,
+  /* LiteralStringSingle */ "s1": #6f8a5a,
+  /* LiteralStringSymbol */ "ss": #6f8a5a,
+  /* LiteralNumber */ "m": #b08a4a,
+  /* LiteralNumberBin */ "mb": #b08a4a,
+  /* LiteralNumberFloat */ "mf": #b08a4a,
+  /* LiteralNumberHex */ "mh": #b08a4a,
+  /* LiteralNumberInteger */ "mi": #b08a4a,
+  /* LiteralNumberIntegerLong */ "il": #b08a4a,
+  /* LiteralNumberOct */ "mo": #b08a4a,
+  /* Operator */ "o": #8a7a5f,
+  /* OperatorWord */ "ow": #9c6b3f,
+  /* Comment */ "c": #a09a8c,
+  /* CommentHashbang */ "ch": #a09a8c,
+  /* CommentMultiline */ "cm": #a09a8c,
+  /* CommentSingle */ "c1": #a09a8c,
+  /* CommentSpecial */ "cs": #a09a8c,
+  /* CommentPreproc */ "cp": #a09a8c,
+  /* CommentPreprocFile */ "cpf": #a09a8c,
+  /* Generic */ "g": #b0523f,
+  /* GenericDeleted */ "gd": #b0523f,
+  /* GenericEmph */ "ge": #b0523f,
+  /* GenericError */ "gr": #b0523f,
+  /* GenericHeading */ "gh": #b0523f,
+  /* GenericInserted */ "gi": #5f7d68,
+  /* GenericOutput */ "go": #8a7a5f,
+  /* GenericPrompt */ "gp": #8a7a5f,
+  /* GenericStrong */ "gs": #b08a4a,
+  /* GenericSubheading */ "gu": #8a7a5f,
+  /* GenericTraceback */ "gt": #b0523f,
+  /* TextWhitespace */ "w": #c8c2b4,
+) !default;
+
+$code-highlight-color-map-dark: (
+  /* Parentheses */ "p": #8a8579,
+  /* Keyword */ "k": #d9a066,
+  /* KeywordConstant */ "kc": #d9a066,
+  /* KeywordDeclaration */ "kd": #d9a066,
+  /* KeywordNamespace */ "kn": #d9a066,
+  /* KeywordPseudo */ "kp": #d9a066,
+  /* KeywordReserved */ "kr": #d9a066,
+  /* KeywordType */ "kt": #d9a066,
+  /* Name */ "n": #d8d4cc,
+  /* NameAttribute */ "na": #8fa8b8,
+  /* NameBuiltin */ "nb": #e0b088,
+  /* NameBuiltinPseudo */ "bp": #e0b088,
+  /* NameClass */ "nc": #d9c08a,
+  /* NameConstant */ "no": #8fa8b8,
+  /* NameDecorator */ "nd": #8fb89a,
+  /* NameEntity */ "ni": #8fa8b8,
+  /* NameException */ "ne": #8fa8b8,
+  /* NameFunction */ "nf": #8fb89a,
+  /* NameFunctionMagic */ "fm": #8fa8b8,
+  /* NameLabel */ "nl": #8fa8b8,
+  /* NameNamespace */ "nn": #8fa8b8,
+  /* NameOther */ "nx": #d8d4cc,
+  /* NameProperty */ "py": #8fb89a,
+  /* NameTag */ "nt": #d9a066,
+  /* NameVariable */ "nv": #8fb89a,
+  /* NameVariableClass */ "vc": #8fb89a,
+  /* NameVariableGlobal */ "vg": #8fb89a,
+  /* NameVariableInstance */ "vi": #8fb89a,
+  /* NameVariableMagic */ "vm": #8fb89a,
+  /* Literal */ "l": #b8a888,
+  /* LiteralDate */ "ld": #b8a888,
+  /* LiteralString */ "s": #9cbf88,
+  /* LiteralStringAffix */ "sa": #9cbf88,
+  /* LiteralStringBacktick */ "sb": #9cbf88,
+  /* LiteralStringChar */ "sc": #9cbf88,
+  /* LiteralStringDelimiter */ "dl": #9cbf88,
+  /* LiteralStringDoc */ "sd": #9cbf88,
+  /* LiteralStringDouble */ "s2": #9cbf88,
+  /* LiteralStringEscape */ "se": #9cbf88,
+  /* LiteralStringHeredoc */ "sh": #9cbf88,
+  /* LiteralStringInterpol */ "si": #9cbf88,
+  /* LiteralStringOther */ "sx": #9cbf88,
+  /* LiteralStringRegex */ "sr": #9cbf88,
+  /* LiteralStringSingle */ "s1": #9cbf88,
+  /* LiteralStringSymbol */ "ss": #9cbf88,
+  /* LiteralNumber */ "m": #d9c08a,
+  /* LiteralNumberBin */ "mb": #d9c08a,
+  /* LiteralNumberFloat */ "mf": #d9c08a,
+  /* LiteralNumberHex */ "mh": #d9c08a,
+  /* LiteralNumberInteger */ "mi": #d9c08a,
+  /* LiteralNumberIntegerLong */ "il": #d9c08a,
+  /* LiteralNumberOct */ "mo": #d9c08a,
+  /* Operator */ "o": #b8a888,
+  /* OperatorWord */ "ow": #d9a066,
+  /* Comment */ "c": #7d786e,
+  /* CommentHashbang */ "ch": #7d786e,
+  /* CommentMultiline */ "cm": #7d786e,
+  /* CommentSingle */ "c1": #7d786e,
+  /* CommentSpecial */ "cs": #7d786e,
+  /* CommentPreproc */ "cp": #7d786e,
+  /* CommentPreprocFile */ "cpf": #7d786e,
+  /* Generic */ "g": #e07a68,
+  /* GenericDeleted */ "gd": #e07a68,
+  /* GenericEmph */ "ge": #e07a68,
+  /* GenericError */ "gr": #e07a68,
+  /* GenericHeading */ "gh": #e07a68,
+  /* GenericInserted */ "gi": #8fb89a,
+  /* GenericOutput */ "go": #b8a888,
+  /* GenericPrompt */ "gp": #b8a888,
+  /* GenericStrong */ "gs": #d9c08a,
+  /* GenericSubheading */ "gu": #b8a888,
+  /* GenericTraceback */ "gt": #e07a68,
+  /* TextWhitespace */ "w": #55524c,
+) !default;
+
+// ========== Admonition ========== //
+// 提示框：统一走赭石/墨绿/暖灰，去掉刺眼的荧光蓝红
+$admonition-color-list:
+  "note" #6b7f8f rgba(107, 127, 143, 0.1),
+  "abstract" #6b7f8f rgba(107, 127, 143, 0.1),
+  "info" #5f7d68 rgba(95, 125, 104, 0.1),
+  "todo" #9c6b3f rgba(156, 107, 63, 0.1),
+  "tip" #5f7d68 rgba(95, 125, 104, 0.1),
+  "success" #5f7d68 rgba(95, 125, 104, 0.1),
+  "question" #9c6b3f rgba(156, 107, 63, 0.1),
+  "warning" #b08a4a rgba(176, 138, 74, 0.1),
+  "failure" #b0523f rgba(176, 82, 63, 0.1),
+  "danger" #b0523f rgba(176, 82, 63, 0.1),
+  "bug" #b0523f rgba(176, 82, 63, 0.1),
+  "example" #6b7f8f rgba(107, 127, 143, 0.1),
+  "quote" #8a8579 rgba(138, 133, 121, 0.1),
+  !default;
+// ========== Admonition ========== //
