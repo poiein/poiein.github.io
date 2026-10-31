@@ -19,7 +19,7 @@ enableGitInfo = false
     weight = 3
 
 [params]
-  defaultTheme = "auto"
+  defaultTheme = "auto" # 只管亮/暗模式自动切换
   title = "Rowan‘s Blog"            # 这里也要设置！
   description = "This is my blog"
   [params.footer]
